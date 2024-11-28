@@ -53,7 +53,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8xr1k")
 }, {
-"duration": 1.0,
+"duration": 0.6,
 "texture": SubResource("AtlasTexture_mwagj")
 }, {
 "duration": 0.6,
@@ -62,7 +62,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_dkqjy")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
 "speed": 5.0
 }]
@@ -112,7 +112,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mp5bt")
 }, {
-"duration": 1.0,
+"duration": 0.6,
 "texture": SubResource("AtlasTexture_c2ilr")
 }, {
 "duration": 0.6,
@@ -121,18 +121,17 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_2ht30")
 }],
-"loop": true,
+"loop": false,
 "name": &"jump",
 "speed": 7.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_q2jgc"]
 radius = 56.0
-height = 132.0
+height = 150.0
 
 [node name="Bunny" type="Node2D"]
 position = Vector2(549, 107)
-metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_dlilu")
