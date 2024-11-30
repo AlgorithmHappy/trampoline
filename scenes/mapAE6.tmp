@@ -13,15 +13,4 @@ position = Vector2(540, 960)
 [node name="Background" parent="." instance=ExtResource("2_6ij66")]
 
 [node name="Bunny" parent="." instance=ExtResource("3_yhymc")]
-position = Vector2(540, 960)
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 30.0
-autostart = true
-
-[node name="Timer2" type="Timer" parent="."]
-wait_time = 60.0
-autostart = true
-
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="timeout" from="Timer2" to="." method="_on_timer_2_timeout"]
+position = Vector2(540, 1280)

@@ -12,6 +12,7 @@ var test_maximo = 0
 var test_colision = false
 var test_brincos = 15
 var is_falling = false
+var move_bunny: Vector2
 
 func _ready() -> void:
 	for animated_sprite in get_children():
@@ -49,5 +50,15 @@ func _physics_process(delta: float) -> void:
 		
 	# Comprovar si esta cayendo el personaje
 	is_falling = (velocity.y > 0)
+	
+	if self.position.y < 0:
+		move_bunny = self.position
+	
+	if self.global_position.x < 150/2:
+		self.global_position.x = 150/2
+		velocity.x = 0
+	if self.global_position.x > 1080-(150/2):
+		self.global_position.x = 1080-(150/2)
+		velocity.x = 0
 		
 	move_and_slide() # Funcion que hace que el jugador se pueda mover

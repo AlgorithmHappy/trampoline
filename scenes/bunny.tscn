@@ -131,7 +131,7 @@ radius = 56.0
 height = 150.0
 
 [node name="Bunny" type="Node2D"]
-position = Vector2(549, 107)
+metadata/_edit_group_ = true
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 script = ExtResource("1_dlilu")
