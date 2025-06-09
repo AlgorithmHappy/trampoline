@@ -12,7 +12,7 @@ var main_frame: int = 0
 var path_player_node: String = "Bunny/CharacterBody2D"
 var path_background_node: String = "Background/ParallaxBackground"
 var weight_normal_platform: int = 90
-var platforms_colors = { # "beige", "brown", "green", "gray", "pink", "white"
+var platforms_colors = {
 	1: "beige",
 	2: "brown",
 	3: "green",

@@ -13,6 +13,7 @@ var test_colision = false
 var test_brincos = 15
 var is_falling = false
 var move_bunny: Vector2
+var plus_jump: float = 0 # Cuando entre en colision con el resorte
 
 func _ready() -> void:
 	for animated_sprite in get_children():
@@ -30,7 +31,8 @@ func _physics_process(delta: float) -> void:
 	
 	# Programacion de la gravedad.
 	if collision_jump:
-		velocity.y = jump_velocity * delta
+		velocity.y = (jump_velocity - plus_jump) * delta
+		plus_jump = 0
 		var animated_sprite = get_node(chosen_character)
 		animated_sprite.play("jump")
 		collision_jump = false

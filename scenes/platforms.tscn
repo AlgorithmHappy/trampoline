@@ -171,7 +171,7 @@ script = ExtResource("1_fm1uf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D"]
 sprite_frames = SubResource("SpriteFrames_aap60")
-animation = &"smoke"
+animation = &"normal"
 
 [node name="Area2D" type="Area2D" parent="StaticBody2D"]
 
